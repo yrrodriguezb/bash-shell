@@ -24,7 +24,7 @@ sudo = super user do = Hacer algo como super usuario
         chmod +x file # Aplica el permiso de ejeucion a todos
 
 
-        Fomato octal 0-7
+        Formato octal 0-7
         r = 4
         w = 2
         x = 1
