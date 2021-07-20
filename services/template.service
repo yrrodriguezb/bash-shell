@@ -1,0 +1,36 @@
+# Pasos
+
+# Descarga del repositorio con el proyecto de Python, Django, Node.js:
+# git clone https://github.com/yrrodriguezb/${repositorio}
+
+# Instalación de Node.js:
+# sudo apt install nodejs npm
+
+# Descarga e instalación de la versión 10 de Node.js:
+# curl -sL https://deb.nodesource.com/setup_10.x -o node_setup.sh
+# sudo bash node_setup.sh
+# sudo apt-get install gcc g++ make
+# sudo apt-get install -y nodejs
+
+# Instalación Python
+# sudo apt install python3.9
+
+# Creación de un usuario para manejar los procesos de Node.js:
+# sudo adduser nodejs
+
+# Creación del script /lib/systemd/system/template.service para que el servicio de Node.js arranque con el sistema operativo:
+[Unit]
+Description=Balanceo de carga para el proyecto
+Documentation=https://github.com/yrrodriguezb/${repositorio}
+After=network.target
+
+[Service]
+Environment=PORT=%i
+Type=simple
+User=nodejs
+WorkingDirectory=/home/nodejs/${source_code}
+ExecStart=/usr/bin/node /home/nodejs/${source_code}/server.js
+Restart-on=failure
+
+[Install]
+WantedBy=multi-user.target

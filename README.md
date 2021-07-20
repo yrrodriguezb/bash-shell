@@ -10,3 +10,4 @@ Enlaces de interes para profundizar sobre los comandos que se puede ejecutar en 
   - [An A-Z Index of the Linux command line: bash + utilities.](https://ss64.com/bash/)
   - [Tips: Más de 400 comandos para GNU/Linux que deberías conocer](https://blog.desdelinux.net/mas-de-400-comandos-para-gnulinux-que-deberias-conocer/)
   - [Bash scripting cheatsheet](https://devhints.io/bash)
+  - [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
